@@ -1,0 +1,12 @@
+1、js 转化
+String.prototype.capitalize = function(){
+	return this.replace(/(^|\s)([a-z])/g, function(m, p1, p2){
+		return p1 + p2.toUpperCase();
+	});
+}
+
+2、css控制
+text-transform：
+capitalize 文本中的每个单词以大写字母开头。
+uppercase  定义仅有大写字母。
+lowercase  定义无大写字母，仅有小写字母。
